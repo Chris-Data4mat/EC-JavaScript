@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Exchange Rates 1</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/exchangeRate1.css">
+    <script src="js/simple-helper.js"></script>
+    <script src="./js/exchangeRate1.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Exchange Rates</h1>
+        <div id='country_list' class="country_list"></div>
+        <div id='calculator' class="calculator_class"></div>
+        <div class='button_holder'>
+            <button id='action_button'></button>
+
+            <p class="copyright_class">Data4Mat &copy; 2020<br>Chris Johanneson</p>
+        </div>
+    </div>
+
+    <script>
+
+        // fires when all links and scripts are loaded.
+        window.addEventListener('load', function () {
+            // Creates the Country object
+            loadCountries();
+            // Creates the countries list table page
+            createCountriesListTable();
+            // Creates the calculation page
+            createCalculation();
+            // Opens the Country list page as a default
+            showCountriesList(true);
+            addEvents();
+        });
+        // Add Event listeners
+        function addEvents() {
+            //Helper.keyPress('val_1', numbChange);
+            //Helper.keyPress('val_2', numbChange);
+            //Helper.onChange('curr_1', currChange);
+            //Helper.onChange('curr_2', currChange);
+            Helper.onClick('action_button', changeView);
+            Helper.onClick('clear_button', clear);
+        };
+    </script>
+
+
+</body>
+
+</html>
