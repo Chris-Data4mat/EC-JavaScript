@@ -53,9 +53,9 @@ function loadCountries() {
 function createCountriesListTable() {
   //alert("in CreateCountry List");
   html =
-    '<table class="listTable_Class"><tr><td class="align_right">Select base currency:</td><td><select id="baseCurr" name="baseCurr" onchange="selectBaseCurrency()">';
+    '<table class="listTable_Class"><tr><td class="align_right">Select base currency:</td><td><select id="baseCurr" class="selectCurrency" name="baseCurr" onchange="selectBaseCurrency()">';
   for (j = 0; j < Countries.length; j++) {
-    html += '<option value="' + j.toString() + '"';
+    html += '<option class="selectCurrency" value="' + j.toString() + '"';
     if (Countries[j].currency == baseCurrency) {
       html += " selected";
     }
@@ -193,6 +193,8 @@ function calculate(id, box) {
       res = result; //result.toString().substring(0, result.toString().indexOf(".") + 3);
     }
     Helper.setValue("val_2", res);
+  } else if (val_1 == "") {
+    Helper.setValue("val_2", "");
   } else {
     if (val2 !== "") {
       result = val2 * exch_rate;
@@ -205,6 +207,8 @@ function calculate(id, box) {
         res = result; //result.toString().substring(0, result.toString().indexOf(".") + 3);
       }
       Helper.setValue("val_1", res);
+    } else {
+      Helper.setValue("val_1", "");
     }
   }
   if (in_box == "val_2") {
@@ -219,9 +223,9 @@ function getExchangeRate(c1, c2) {
   let result = Countries[c1].rate / Countries[c2].rate;
   // alert("getExchangeRate result = " + result);
   if (in_box == "val_1" || in_box == "") {
-    return result;
-  } else {
     return 1 / result;
+  } else {
+    return result;
   }
 }
 
@@ -236,20 +240,28 @@ function numbChange(id) {
   //alert("numbChange, id = " + id);
   let temp = Helper.getValue(id);
   //alert("numbChange temp= " + temp);
-  if (isNumber(temp)) {
-    if (id == "val_1") {
-      in_box = "val_1";
-      calculate(id, 1);
-    } else if (id == "val_2") {
-      in_box = "val_2";
-      calculate(id, 2);
-    } else {
-      alert(
-        "Function numbChange did not receive a proper id atribute \n id = " + id
-      );
-    }
+  if (temp == "") {
+    clear();
+    Helper.focus(id); // et focus on the box that caused the action.
   } else {
-    Helper.setHtml("input_err", temp + " is not a number or .");
+    if (isNumber(temp)) {
+      if (id == "val_1") {
+        in_box = "val_1";
+        calculate(id, 1);
+      } else if (id == "val_2") {
+        in_box = "val_2";
+        calculate(id, 2);
+      } else {
+        alert(
+          "Function numbChange did not receive a proper id atribute \n id = " +
+            id
+        );
+      }
+    } else {
+      if (temp !== "") {
+        Helper.setHtml("input_err", temp + " is not a number or .");
+      }
+    }
   }
 }
 // inputs a string/number and checks if the character is a number.
@@ -259,7 +271,8 @@ function numbChange(id) {
 function isNumber(x) {
   //alert("in isNumber, x = " + x + "\nNumber(x) = " + Number(x));
   Helper.setHtml("input_err", "");
-  if (Number(x).toString() !== "NaN" || x == ".") {
+  //alert("isNumber Number(): " + Number(x).toString());
+  if (x != "" && (Number(x).toString() !== "NaN" || x == ".")) {
     //alert("isNumber = true");
     return true;
   } else {
