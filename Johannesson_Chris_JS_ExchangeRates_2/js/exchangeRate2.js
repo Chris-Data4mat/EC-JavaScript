@@ -18,7 +18,7 @@ function loadCountries() {
 
       let xdata;
       fetch(
-        "https://v6.exchangerate-api.com/v6/352611ef689d2d7857379dd1/latest/" +
+        "https://v6.exchangerate-api.com/v6/USE_YOUR_KEY/latest/" +
           baseCurrency
       )
         .then((response) => response.json())
