@@ -1,0 +1,92 @@
+[
+   {
+    "name": "Los Angeles",
+    "country": "US",
+    "id": 5368361
+   },
+   {
+    "name": "New York",
+    "country": "US",
+    "id": 5128581
+   },
+   {
+    "name": "Tokyo",
+    "country": "JP",
+    "id": 1850144
+   },
+   {
+    "name": "Moscow",
+    "country": "RU",
+    "id": 524901
+   },
+   {
+    "name": "Hong Kong",
+    "country": "CN",
+    "id": 1819729
+   },
+   {
+    "name": "Paris",
+    "country": "FR",
+    "id": 2988507
+   },
+   {
+    "name": "Cape Town",
+    "country": "ZA",
+    "id": 3369157
+   },
+   {
+    "name": "Sydney",
+    "country": "AU",
+    "id": 2147714
+   },
+   {
+    "name": "Mexico City",
+    "country": "MX",
+    "id": 3530597
+   },
+   {
+    "name": "Gothenburg",
+    "country": "SE",
+    "id": 2711537
+   },
+   {
+    "name": "Brisbane",
+    "country": "AU",
+    "id": 2174003
+   },
+   {
+    "name": "Singapore",
+    "country": "SG",
+    "id": 1880252
+   },
+   {
+    "name": "Kuala Lumpur",
+    "country": "MY",
+    "id": 1733046
+   },
+   {
+    "name": "Manila",
+    "country": "PH",
+    "id": 1701668
+   },
+   {
+    "name": "Alicante",
+    "country": "ES",
+    "id": 2521978
+   },
+   {
+    "name": "London",
+    "country": "UK",
+    "id": 2643743
+   },
+   {
+    "name": "Maceio",
+    "country": "BR",
+    "id": 3395981
+   },
+   {
+    "name": "Auckland",
+    "country": "NZ",
+    "id": 2193733
+   }
+]

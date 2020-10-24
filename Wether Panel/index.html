@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Weather Panel</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>-->
+    <script src="js/simple-helper.js"></script>
+    <script src="model/weather-model.js"></script>
+    <script src="view/weather-view.js"></script>
+    <script src="controller/weather-control.js"></script>
+    <script>
+        var Cities = {};
+        var Current = {};
+        var Weather = [];
+
+        //var NumbCities = 4;
+        var CitiesIndex = [5128581, 2643743, 1880252, 1850144]; // Default cities.
+
+        const Model = new modelClass();
+        const View = new viewClass();
+        const Controller = new controlClass();
+
+        // Create events
+        const weatherDataLoaded = document.createEvent('Event');
+        weatherDataLoaded.initEvent('weatherDataLoaded', true, true);
+
+        // attach eventlisteners start app.
+        document.addEventListener('DOMContentLoaded', function () {
+            document.addEventListener('weatherDataLoaded', View.initPage);
+            Controller.init();
+        });
+    </script>
+
+    </script>
+</head>
+
+<body>
+    <form onchange=""></form>
+    <header>
+        <h1 class="page_head">Weather Panel</h1>
+    </header>
+    <nav></nav>
+    <main>
+        <div class="container">
+            <div id='inputError' class="error_message" style='display: none'></div>
+        </div>
+        <div id="weather_box_selector" class="weather_box_selector"></div>
+        <div id='weather_box_container' class="weather_box_container"></div>
+        <div id='weather_map_container' class="weather_map_container"></div>
+
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p class="copyright_class">Data4Mat &copy; 2020<br>Chris Johanneson</p>
+        </div>
+    </footer>
+</body>
+
+</html>
