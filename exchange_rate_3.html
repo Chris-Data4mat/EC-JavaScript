@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Exchange Rates 3</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/exchangeRate3.css">
+    <!--<script src="./js/JSKurs_ClassLibrary.js"></script>-->
+    <script src="./js/simple-helper.js"></script>
+    <script src="./js/exchangeRate3.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 style="text-align: center;">Exchange Rates</h1>
+    </header>
+    <nav></nav>
+    <main>
+        <div class="container">
+
+            <div id='country_list' class="country_list" style="display:none;"></div>
+            <div id='calculator' class="calculator_class" style="display: none;"></div>
+
+        </div>
+    </main>
+    <footer>
+        <div class='button_holder'>
+            <button id='action_button' class="manouver_button"></button>
+
+            <p class="copyright_class">Data4Mat &copy; 2020<br>Chris Johanneson</p>
+        </div>
+    </footer>
+    <script>
+
+        // fires when all links and scripts are loaded.
+        window.addEventListener('load', function () {
+            // Creates the Country object
+            //alert('before initData()');
+            document.addEventListener('onExchangeRatesLoaded', testEvent); // test adding event listener onERLoaded
+            document.addEventListener('onCountriesLoaded', testEvent2); // test addiing event listener onCLoaded.
+            initData();
+
+        });
+        // Add Event listeners
+        function addEvents() {
+            //Helper.keyPress('val_1', numbChange);
+            //Helper.keyPress('val_2', numbChange);
+            //Helper.onChange('curr_1', currChange);
+            //Helper.onChange('curr_2', currChange);
+            Helper.onClick('action_button', changeView);
+            Helper.onClick('clear_button', clear);
+        };
+    </script>
+
+
+</body>
+
+</html>

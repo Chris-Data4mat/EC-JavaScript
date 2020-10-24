@@ -1,0 +1,116 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  font-family: Verdana;
+  background: url(../images/world-map.jpg);
+  background-size: 100%;
+  position: relative;
+}
+
+td {
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px auto 0 auto;
+  width: 35vw;
+  max-width: 960px;
+  padding: 20px;
+  background: paleturquoise;
+  opacity: 70%;
+  border: dimgrey groove 5px; /* Comment out in production */
+}
+
+.country_list {
+  display: flex;
+  justify-content: center;
+  opacity: 100%;
+  /*border: solid blue 3px;*/ /* Comment out in production */
+  /*max-height: 600px;*/
+  max-height: 65vh;
+  overflow-y: scroll;
+}
+
+.align_right {
+  text-align: right;
+}
+
+.button_holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.listTable_Class {
+  width: 450px;
+  border-collapse: collapse;
+}
+
+.listTable_Class th {
+  padding-left: 10px;
+  padding-right: 10px;
+  white-space: nowrap;
+}
+
+.center_class {
+  text-align: center;
+}
+
+.listTable_Class tr:nth-child(even) {
+  background-color: rgb(138, 221, 221);
+}
+
+.countryColumn_class {
+  white-space: nowrap;
+  text-align: left;
+}
+
+.copyright_class {
+  text-align: center;
+  font-size: 0.7em;
+  color: slategray;
+  padding-top: 20px;
+  padding-bottom: 3px;
+}
+
+/*.calculator_class {
+  height: 50vh;
+  width: 100%;
+}*/
+
+.clearButton {
+  text-align: center;
+}
+
+.selectCurrency {
+  background-color: paleturquoise;
+  border: slategray inset 2px;
+  padding: 2px;
+}
+
+.manouver_button {
+  padding: 4px 14px;
+}
+
+#action_button {
+  background-color: navy;
+  color: cornsilk;
+  /*padding: 4px;
+  */
+}
+#action_button:hover {
+  background-color: blue;
+}
+
+#input_err {
+  color: red;
+  font-style: normal;
+  font-size: 0.8em;
+  font-weight: lighter;
+}

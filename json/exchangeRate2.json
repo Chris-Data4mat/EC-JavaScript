@@ -1,0 +1,146 @@
+[
+  {
+    "name": "Sverige",
+    "capital": "Stockholm",
+    "currency": "SEK",
+    "currency_name": "Swedish Krona",
+    "rate": 1
+  },
+  {
+    "name": "Finland",
+    "capital": "Helsinki",
+    "currency": "EUR",
+    "currency_name": "Euro",
+    "rate": 10.474
+  },
+
+  {
+    "name": "USA",
+    "capital": "Washington, DC",
+    "currency": "USD",
+    "currency_name": "US Dollars",
+    "rate": 8.942
+  },
+  {
+    "name": "Great Britain",
+    "capital": "London",
+    "currency": "GBP",
+    "currency_name": "Great Britain Pund",
+    "rate": 11.562
+  },
+
+  {
+    "name": "Australia",
+    "capital": "Canberra",
+    "currency": "AUD",
+    "currency_name": "Australian Dollar",
+    "rate": 6.411
+  },
+  {
+    "name": "New Zealand",
+    "capital": "Wellington",
+    "currency": "NZD",
+    "currency_name": "New Zealand Dollar (Kiwi)",
+    "rate": 5.937
+  },
+  {
+    "name": "Canada",
+    "capital": "Ottawa",
+    "currency": "CAD",
+    "currency_name": "Canadian Dollar (Loonie)",
+    "rate": 6.723
+  },
+
+  {
+    "name": "Switzerland",
+    "capital": "Bern",
+    "currency": "CHF",
+    "currency_name": "Swiss Franc",
+    "rate": 9.724
+  },
+
+  {
+    "name": "Japan",
+    "capital": "Tokyo",
+    "currency": "JPY",
+    "currency_name": "Japanese Yen",
+    "rate": 0.849
+  },
+  {
+    "name": "China",
+    "capital": "Beijing",
+    "currency": "CNY",
+    "currency_name": "Renminbi (Yuan)",
+    "rate": 0.7624
+  },
+  {
+    "name": "Czech Republic",
+    "capital": "Prague",
+    "currency": "CZK",
+    "currency_name": "Czech Koruna",
+    "rate": 0.7624
+  },
+  {
+    "name": "Denmark",
+    "capital": "Copenhagen",
+    "currency": "DKK",
+    "currency_name": "Danish Krona",
+    "rate": 6.1321
+  },
+  {
+    "name": "Norway",
+    "capital": "Oslo",
+    "currency": "NOK",
+    "currency_name": "Norwegian Krona",
+    "rate": 9.2515
+  },
+  {
+    "name": "Iceland",
+    "capital": "Raykjavik",
+    "currency": "ISK",
+    "currency_name": "Icelandic Krona",
+    "rate": 0.0639
+  },
+  {
+    "name": "Germany",
+    "capital": "Berlin",
+    "currency": "EUR",
+    "currency_name": "Euro",
+    "rate": 10.474
+  },
+  {
+    "name": "Philippines",
+    "capital": "Manila",
+    "currency": "PHP",
+    "currency_name": "Philippine Peso",
+    "rate": 0.1839
+  },
+  {
+    "name": "Hong Kong",
+    "capital": "Hong Kong",
+    "currency": "HKD",
+    "currency_name": "Hong Kong  Dollar",
+    "rate": 0.1839
+  },
+  {
+    "name": "Brazil",
+    "capital": "Brasilia",
+    "currency": "BRL",
+    "currency_name": "Brazilian Real",
+    "rate": 0.1839
+  },
+  {
+    "name": "Argentine",
+    "capital": "Buenos Aires",
+    "currency": "ARS",
+    "currency_name": "Argentine Peso",
+    "rate": 0.1839
+  },
+  {
+    "name": "Malaysia",
+    "capital": "Kuala Lumpur",
+    "currency": "MYR",
+    "currency_name": "Malaysian Ringgit",
+    "rate": 0.1839
+  }
+]
